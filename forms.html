@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>forms demo</h3>
+    <button>formun dışında</button>
+    <form action="/food">
+        <button type="button">lüten yollama</button>
+      <div>
+        <label for="userName">Kullanıcı adı giriniz</label>
+        <input id="userName" type="text" name="userName" placeholder="kullanıcı adı"/>
+        </div>
+        <div>
+        <label for="password"> şifre</label>
+        <input id="password" type="password" placeholder="şifre"/>
+      </div>
+      <button>gönder</button>
+      <div>
+        <label for="color">renk seçiniz</label>
+        <input id="color" type="color"/>
+      </div>
+      <div>
+        <label for="number">sayı giriniz</label>
+        <input id="number" type="number" placeholder="sayı giriniz"/>
+      </div>
+      <button>gönder!</button>
+    </form>
+    <input type="submit" value="tıklayın"/>
+<hr/>
+<form action="https://www.reddit.com/search">
+    <label for="search">redditte ara</label> 
+    <input type="text" id="search" name="q"/> 
+    <button>git</button>
+</form>
+<form action="https://www.google.com/search">
+    <label for="search">google</label>
+    <input type="text" id="search" name="q"/>
+    <button>search google</button>
+</form>
+<form action="https://www.youtube.com/results">
+    <label for="search">youtube</label>
+    <input type="text" id="search" name="search_query"/>
+    <button>search youtube</button>
+</form>
+<hr/>
+<h2>daha fazla ınput</h2>
+<form action="/birds">
+    <input type="checkbox" name="tos" id="agree"checked/>
+    <label for="agree">kabul ediyorum</label>
+    
+    <div>
+        <input type="radio" name="roj" id="seçim" value="öykü çok tatlı"/>
+        <label for="seçim">a)öykü çok tatlı</label>
+    </div>
+    <div>
+        <input type="radio" name="roj" id="seçim" value="b"/>
+        <label for="seçim">b)a</label>
+    </div>
+    <div>
+        <input type="radio" name="roj" id="seçim" value="c"/>
+        <label for="seçim">c)b</label>
+    </div>
+<p>
+    <label for="animal">hayvanınızı seçiniz</label>
+    <select name="animal" id="animal">
+        <option value="fish">balık</option>
+        <option value="birds">kuş</option>
+<option value="cat">kedi</option>
+    </select>
+</p>
+<div>
+    <label for="cheese">peynir toplama</label>
+    <input min="0" max="100" step="5" value="3" type="range"  name="cheese" id="cheese"/>
+</div>
+    <div>
+        <label for="wish">özel istek:</label><br/>
+            <textarea name="wish" id="wish" cols="30" rows="10" placeholder="buraya bir şeyler yazın
+            "></textarea>
+    </div>
+    
+</form>
+<h2>validations</h2>
+<form action="/spare">
+    <label for="first">isim giriniz</label>
+    <input type="text" name="first" id="first" required/>
+    
+    <label for="visitor">ziyaretçi ismi:</label>
+    <input type="text" id="visitor" name="visitor" minlength="5" maxlength="15" required/>
+    <button>submit</button>
+</form>
+</body>
+</html>
